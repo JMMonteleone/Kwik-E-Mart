@@ -10,24 +10,49 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Madimi+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <title>Kiosco Kwik E Mart</title>
 </head>
 
 <body>
     <header>
-        <a class="logo" href="./index.html">
-            <img src="./Imagenes/Kwik-E-Mart.webp" alt="logo del kiosco">Kiosco Kwik E Mart</a>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./Imagenes/Kwik-E-Mart.webp" alt="Logo" class="d-inline-block align-text-top">
+                    Kiosco Kwik-E-Mart
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/sobre-nosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <nav class="navbar">
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="./pages/sobre-nosotros.html">Sobre nosotros</a></li>
-            <li><a href="./pages/productos.html">Productos</a></li>
-            <li><a href="./pages/faq.html">FAQ</a></li>
-            <li><a href="./pages/contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
+
 
     <section id="banner">
         <h1>Bienvenidos a Kiosco Kwik E Mart</h1>
@@ -115,43 +140,47 @@
         </div>
     </aside>
 
-    <footer>
-
-        <a href="" class="wsp">
-            <img src="./Imagenes/wsp-logo.webp" alt="icono wsp">
-        </a>
 
 
-        <nav id="nav">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="./pages/sobre-nosotros.html">Sobre nosotros</a></li>
-                <li><a href="./pages/productos.html">Productos</a></li>
-                <li><a href="./pages/faq.html">FAQ</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
+    <footer class="footer">
 
-            <div class="redContainer">
-                <a href="https://www.instagram.com/joniimm34/" class="ig" target="_blank">
-                    <img src="./Imagenes/ig-black.webp" class="ig" alt="Logo de Instagram"> Instagram:
-                </a>
+        <div class="footer-container">
+            <a href="https://wa.me/1122512038" class="wsp" target="_blank">
+                <img src="./Imagenes/wsp-logo.webp" alt="icono wsp">
+            </a>
 
-                <a href="https://wa.me/1122512038" class="wpp" target="_blank">
-                    <img src="./Imagenes/wspblack.png" alt="Logo de WhatsApp"> Whatsapp:
-                </a>
-                <a href="https://www.facebook.com/JonyyMonteleone" class="fb" target="_blank">
-                    <img src="./Imagenes/face.black.webp" alt="Logo de Facebook">Facebook
-                </a>
+            <div class="footer-brand">
+                <h2>Kwik-E-Mart</h2>
+                <p>Tu kiosco de confianza, siempre cerca.</p>
             </div>
-        </nav>
 
+            <div class="footer-links">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="./pages/sobre-nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="./pages/productos.html">Productos</a></li>
+                    <li><a href="./pages/faq.html">FAQ</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
 
+            <div class="footer-social">
+                <h3>Redes Sociales</h3>
+                <a href="https://www.facebook.com/JonyyMonteleone" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/joniimm34/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/1122512038" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
 
-
-
-        <Span>©2025 Kiosco Kwik E Mart. Todos los derechos reservados.<Span>
+        <div class="footer-bottom">
+            <p>©2025 Kiosco Kwik-E-Mart. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
