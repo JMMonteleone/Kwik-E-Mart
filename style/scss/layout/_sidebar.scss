@@ -1,0 +1,41 @@
+.kwik-e-mart-aside {
+    grid-area: aside;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #C8A2C8;
+    padding: 100px 20px 0 20px;
+
+    h3 {
+        color: $mainTextColor;
+        margin-bottom: 3px;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 14px;
+        font-style: italic;
+    }
+
+    .aside-content {
+        ul {
+            list-style: none;
+            margin: 10px 0;
+
+            li {
+                background: $mainColor;
+                border-radius: 5px;
+                margin: 3px 0;
+                font-weight: 600;
+                font-size: small;
+            }
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+    }
+}

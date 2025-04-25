@@ -1,0 +1,114 @@
+#contacto {
+    padding: 60px 20px;
+    background-color: #F8FFE5;
+    text-align: center;
+
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+        color: $mainTextColor;
+    }
+
+    .contacto-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        align-items: flex-start;
+
+        .contacto-info {
+            flex: 1;
+            min-width: 300px;
+            max-width: 400px;
+            text-align: left;
+
+            h3 {
+                margin-top: 20px;
+                font-size: 1.2rem;
+                color: $mainTextColor;
+            }
+
+            p {
+                margin: 5px 0;
+            }
+        }
+
+        .contacto-form {
+            @extend .contacto-info;
+        }
+
+        .contacto-mapa {
+            @extend .contacto-info;
+
+            iframe {
+                width: 100%;
+                height: 300px;
+                border: 0;
+                border-radius: 12px;
+            }
+        }
+
+        .form-sugerencias {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            label {
+                font-weight: 600;
+            }
+
+            input[type="text"] {
+                padding: 10px;
+                border-radius: 8px;
+                border: 1px solid #ccc;
+                font-size: 1rem;
+            }
+
+            input[type="email"] {
+                padding: 10px;
+                border-radius: 8px;
+                border: 1px solid #ccc;
+                font-size: 1rem;
+            }
+
+            textarea {
+                padding: 10px;
+                border-radius: 8px;
+                border: 1px solid #ccc;
+                font-size: 1rem;
+                min-height: 100px;
+                resize: vertical;
+            }
+
+            input[type="submit"] {
+                background-color: $secondaryColor;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 8px;
+                cursor: pointer;
+                font-weight: bold;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: #06b687;
+                }
+            }
+
+            input[type="reset"] {
+                background-color: $secondaryColor;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 8px;
+                cursor: pointer;
+                font-weight: bold;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: #06b687;
+                }
+            }
+        }
+    }
+}

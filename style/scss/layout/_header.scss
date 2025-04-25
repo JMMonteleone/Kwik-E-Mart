@@ -1,0 +1,14 @@
+header {
+    grid-area: header;
+    background-color: $mainColor;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+
+    .logo {
+        color: $mainTextColor;
+        text-decoration: none;
+        display: flex;
+        font-weight: 800;
+    }
+}
