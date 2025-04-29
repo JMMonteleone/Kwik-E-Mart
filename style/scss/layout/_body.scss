@@ -1,19 +1,20 @@
-body {
+%flex-body {
     display: flex;
     flex-direction: column;
+}
+
+body {
+    @extend %flex-body;
 }
 
 #about {
-    display: flex;
-    flex-direction: column;
+    @extend %flex-body;
 }
 
 #product {
-    display: flex;
-    flex-direction: column;
+    @extend %flex-body;
 }
 
 #contactos {
-    display: flex;
-    flex-direction: column;
+    @extend %flex-body;
 }

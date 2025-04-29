@@ -48,8 +48,11 @@ body {
 }
 
 /* Animations */
-.linear-gradient {
+#contacto, #faq, #product, .testimonio, .servicio, .linear-gradient {
   background-image: linear-gradient(90deg, #f1f1f1, #F8FFE5, #c2d3f1);
+}
+
+.linear-gradient {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -58,31 +61,46 @@ body {
   justify-content: center;
 }
 
-.servicio {
-  background-image: linear-gradient(90deg, #f1f1f1, #F8FFE5, #c2d3f1);
+#product .promocion-0 {
+  position: relative;
+  animation: move 14s infinite;
 }
-
-.testimonio {
-  background-image: linear-gradient(90deg, #f1f1f1, #F8FFE5, #c2d3f1);
+@keyframes move {
+  0% {
+    transform: translateX(0) translateY(0) translateZ(0);
+  }
+  33% {
+    transform: translateX(100px) translateY(0) translateZ(0);
+  }
+  100% {
+    transform: translateX(0) translateY(20px) translateZ();
+  }
+}
+#product .promocion-1 {
+  position: relative;
+  animation: move 14s infinite;
+}
+@keyframes move {
+  0% {
+    transform: translateX(0) translateY(0) translateZ(0);
+  }
+  33% {
+    transform: translateX(100px) translateY(0) translateZ(0);
+  }
+  66% {
+    transform: translateX(0) translateY(20px) translateZ(0);
+  }
+  100% {
+    transform: translateX(0) translateY(100px) translateZ();
+  }
+}
+#product .promocion:hover {
+  transform: scale(1.05) rotateY(5deg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Layout */
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-#about {
-  display: flex;
-  flex-direction: column;
-}
-
-#product {
-  display: flex;
-  flex-direction: column;
-}
-
-#contactos {
+#contactos, #product, #about, body {
   display: flex;
   flex-direction: column;
 }
@@ -434,7 +452,6 @@ header .logo {
 }
 
 #productos {
-  background-color: #F8FFE5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -469,7 +486,6 @@ header .logo {
 }
 
 #precios {
-  background-color: #F8FFE5;
   padding: 50px 20px;
   text-align: center;
 }
@@ -516,72 +532,119 @@ header .logo {
 }
 
 #promociones {
-  background-color: #F8FFE5;
-}
-#promociones .titulo {
-  color: #1B9AAA;
   text-align: center;
 }
 #promociones .promocionesContainer {
   display: flex;
-  padding: 0 20px;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-}
-#promociones .promocionesContainer .promocion {
-  background-color: #FFC43D;
-  text-align: center;
   max-width: 300px;
-  margin: 10px;
-  padding: 10px;
-  border-bottom: 1px solid #F8FFE5;
-  border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 20px 30px 4px;
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+  padding: 2rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-#promociones .promocionesContainer .promocion p {
-  color: c;
-  font-weight: 600;
+#promociones .promocion-0 {
+  max-width: 300px;
+  display: flex;
+}
+#promociones .promocion-1 {
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+}
+#promociones .promocion {
+  background: #f8ffe5;
+  border: 2px solid #1b9aaa;
+  padding: 1rem;
+  border-radius: 15px;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/*
+#promociones {
+
+    .titulo {
+        color: $mainTextColor;
+        text-align: center;
+    }
+
+    .promocionesContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .promocion-0 {
+            .promocion {
+                background-color: $mainColor;
+                text-align: center;
+                max-width: 293px;
+                margin: 3px;
+                padding: 10px;
+                border-bottom: 1px solid #F8FFE5;
+                border-radius: 8px;
+                box-shadow: rgba(0, 0, 0, 0.56) 0px 20px 30px 4px;
+
+                p {
+                    color: #333;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .promocion-1 {
+            .promocion {
+                background-color: $mainColor;
+                text-align: center;
+                max-width: 293px;
+                margin: 3px;
+                padding: 2px;
+                border-bottom: 1px solid #F8FFE5;
+                border-radius: 8px;
+            }
+
+        }
+    }
+}*/
 #faq {
   width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #F8FFE5;
-  padding: 20px;
-  box-sizing: border-box;
+  padding: 4rem 2rem;
+  background-color: #f5f5f5;
 }
 #faq .titulo {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
   text-align: center;
+  font-size: 2.5rem;
   color: #1B9AAA;
+  margin-bottom: 3rem;
 }
-#faq .faqContainer {
-  width: 100%;
-  max-width: 800px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+#faq .faq-container {
+  max-width: 900px;
+  margin: 0 auto;
 }
-#faq .faqContainer .faq-question {
-  padding: 15px 20px;
-  border-radius: 10px;
-  font-weight: 700;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  color: #1f1f1f;
-  background-color: #06D6A0;
+#faq .faq-item {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
 }
-#faq .faqContainer .faq-answer {
-  background-color: #FFC43D;
-  padding: 15px 20px;
-  border-radius: 10px;
-  color: #1f1f1f;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+#faq .faq-item h3 {
+  font-size: 1.4rem;
+  color: #1B9AAA;
+  margin-bottom: 0.5rem;
+}
+#faq .faq-item p {
+  color: #666;
+  font-size: 1rem;
+}
+#faq .faq-item p a {
+  color: #666;
+  text-decoration: none;
 }
 
 #contacto {

@@ -1,17 +1,67 @@
-.linear-gradient {
+%fondo-gradiente {
     background-image: linear-gradient(90deg, #f1f1f1, #F8FFE5, #c2d3f1);
+}
+
+.linear-gradient {
+    @extend %fondo-gradiente;
     height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center
 }
 
 .servicio {
-    background-image: linear-gradient(90deg, #f1f1f1, #F8FFE5, #c2d3f1);
+    @extend %fondo-gradiente;
 }
 
 .testimonio {
-    background-image: linear-gradient(90deg, #f1f1f1, #F8FFE5, #c2d3f1);
+    @extend %fondo-gradiente;
+}
+
+#product {
+    @extend %fondo-gradiente;
+
+    .promocion-0 {
+        position: relative;
+        animation: move 14s infinite;
+
+        @keyframes move {
+            0% { transform: translateX(0) translateY(0) translateZ(0);}
+            33% { transform: translateX(100px) translateY(0) translateZ(0);}
+            100% { transform: translateX(0) translateY(20px) translateZ();}
+        } 
+    }
+
+    .promocion-1 {
+        position: relative;
+        animation: move 14s infinite;
+
+        @keyframes move {
+            0% { transform: translateX(0) translateY(0) translateZ(0);}
+            33% { transform: translateX(100px) translateY(0) translateZ(0);}
+            66% { transform: translateX(0) translateY(20px) translateZ(0);}
+            100% { transform: translateX(0) translateY(100px) translateZ();}
+        }
+
+    
+    }
+
+    .promocion {
+        &:hover {
+            transform: scale(1.05) rotateY(5deg);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+
+#faq {
+    @extend %fondo-gradiente;
+    ;
+}
+
+#contacto {
+    @extend %fondo-gradiente;
 }

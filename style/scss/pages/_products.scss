@@ -1,5 +1,4 @@
 #productos {
-    background-color: #F8FFE5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,7 +39,6 @@
 }
 
 #precios {
-    background-color: #F8FFE5;
     padding: 50px 20px;
     text-align: center;
 
@@ -94,7 +92,48 @@
 }
 
 #promociones {
-    background-color: #F8FFE5;
+    text-align: center;
+
+    .promocionesContainer {
+        display: flex;
+        max-width: 300px;
+        gap: 20px;
+        justify-content: center;
+        align-items: stretch; 
+        padding: 2rem;
+        flex-wrap: wrap; 
+        max-width: 1200px; 
+        margin: 0 auto;
+    }
+
+    .promocion-0 {
+        max-width: 300px; 
+        display: flex;
+    }
+
+    .promocion-1 {
+        max-width: 300px;
+        display: flex;
+        align-items: center;
+    }
+
+    .promocion {
+        background: #f8ffe5;
+        border: 2px solid #1b9aaa;
+        padding: 1rem;
+        border-radius: 15px;
+        text-align: center;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+}
+
+/*
+#promociones {
 
     .titulo {
         color: $mainTextColor;
@@ -103,26 +142,39 @@
 
     .promocionesContainer {
         display: flex;
-        padding: 0 20px;
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
-        width: 100%;
 
-        .promocion {
-            background-color: $mainColor;
-            text-align: center;
-            max-width: 300px;
-            margin: 10px;
-            padding: 10px;
-            border-bottom: 1px solid #F8FFE5;
-            border-radius: 8px;
-            box-shadow: rgba(0, 0, 0, 0.56) 0px 20px 30px 4px;
+        .promocion-0 {
+            .promocion {
+                background-color: $mainColor;
+                text-align: center;
+                max-width: 293px;
+                margin: 3px;
+                padding: 10px;
+                border-bottom: 1px solid #F8FFE5;
+                border-radius: 8px;
+                box-shadow: rgba(0, 0, 0, 0.56) 0px 20px 30px 4px;
 
-            p {
-                color: c;
-                font-weight: 600;
-            }            
-        }  
+                p {
+                    color: #333;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .promocion-1 {
+            .promocion {
+                background-color: $mainColor;
+                text-align: center;
+                max-width: 293px;
+                margin: 3px;
+                padding: 2px;
+                border-bottom: 1px solid #F8FFE5;
+                border-radius: 8px;
+            }
+
+        }
     }
-}
+}*/
