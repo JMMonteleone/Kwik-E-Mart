@@ -3,7 +3,8 @@ header {
     background-color: $mainColor;
     display: flex;
     flex-direction: column;
-    height: 100px;
+    background-color: $mainColor;
+
 
     .logo {
         color: $mainTextColor;
