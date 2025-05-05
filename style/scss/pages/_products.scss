@@ -80,7 +80,7 @@
                 color: #374151;
             }
 
-            span {
+            p {
                 display: block;
                 margin-top: 8px;
                 font-size: 1.4rem;
@@ -93,6 +93,10 @@
 
 #promociones {
     text-align: center;
+
+    h2 {
+        color: $mainTextColor;
+    }
 
     .promocionesContainer {
         display: flex;

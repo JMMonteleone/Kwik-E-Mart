@@ -523,7 +523,7 @@ header .logo {
   font-size: 1.2rem;
   color: #374151;
 }
-#precios .preciosContainer .precio-card span {
+#precios .preciosContainer .precio-card p {
   display: block;
   margin-top: 8px;
   font-size: 1.4rem;
@@ -533,6 +533,9 @@ header .logo {
 
 #promociones {
   text-align: center;
+}
+#promociones h2 {
+  color: #1B9AAA;
 }
 #promociones .promocionesContainer {
   display: flex;
