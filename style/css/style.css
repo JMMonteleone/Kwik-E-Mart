@@ -108,7 +108,6 @@ body {
 
 header {
   grid-area: header;
-  background-color: #FFC43D;
   display: flex;
   flex-direction: column;
   background-color: #FFC43D;
