@@ -40,9 +40,8 @@
 
         @keyframes move {
             0% { transform: translateX(0) translateY(0) translateZ(0);}
-            33% { transform: translateX(100px) translateY(0) translateZ(0);}
-            66% { transform: translateX(0) translateY(20px) translateZ(0);}
-            100% { transform: translateX(0) translateY(100px) translateZ();}
+            66% { transform: translateX(10px) translateY(10px) translateZ(0);}
+            100% { transform: translateX(3px) translateY(3px) translateZ(0);}
         }
 
     
