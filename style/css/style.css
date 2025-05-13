@@ -121,6 +121,7 @@ header .logo {
 
 .navbar {
   grid-area: nav;
+  padding: 40px 20px 20px;
 }
 .navbar img {
   position: relative;
